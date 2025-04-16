@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+        #EvolutionChain {
+            margin-top: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Pokémon Evolution Finder</h1>
+    <input type="text" id="pokemonName" placeholder="Enter Pokémon name or ID">
+    <button id="searchButton">Get Evolution</button>
+    <div id="result">
+        <h2>Evolution Chain</h2>
+        <div id="loader" style="display: none;">Loading...</div>
+        <div id="EvolutionChain">
+
+        </div>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+</html>
